@@ -1,0 +1,54 @@
+#root, body, html {
+  /*enables vertical centering*/
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.Body {
+  width: 350px;
+  min-height: 200px;
+  border: 2px solid black;
+}
+
+.hz {
+  width: 90%;
+  height: 2px;
+  margin: 5% 15px 15px 5%;
+  background: black;
+}
+
+Inputarea {
+  width: 100%;
+}
+
+input {
+  width: 90%;
+  margin: 10px 5% 15px 5%;  
+}
+
+button {
+  width: 50px;
+  height: 25px;
+  border: 1px black solid;
+  margin-left: 5%;
+}
+
+button:hover {
+  transition: transform 0.2s;
+  transform: scale(1.1);
+}
+
+button:active {
+  transition: transform 0.2s;
+  transform: scale(0.9);
+}
+
+*:focus {
+  outline: none;
+}
