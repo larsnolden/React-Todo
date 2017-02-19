@@ -29,6 +29,8 @@ Inputarea {
 
 input {
   width: 90%;
+  height: 1.2em;
+  font-size: 1.2em;
   margin: 10px 5% 15px 5%;  
 }
 
@@ -39,14 +41,8 @@ button {
   margin-left: 5%;
 }
 
-button:hover {
-  transition: transform 0.2s;
-  transform: scale(1.1);
-}
-
 button:active {
-  transition: transform 0.2s;
-  transform: scale(0.9);
+  transform: scale(0.94);
 }
 
 *:focus {
