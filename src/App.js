@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap-theme.css';
+import { Button, Form, FormControl, FormGroup, InputGroup } from 'react-bootstrap';
+
 import './App.css';
 
 
@@ -25,6 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Body">
+          <h2 className='header'>zuTun</h2>
           <Inputarea list={this.state.list} updateList={this.handleUpdateList}/>
           <div className="hz" />
           <ItemList list={this.state.list}/>
@@ -76,9 +82,9 @@ class Inputarea extends Component {
   
   render() {
     return (
-      <form onSubmit={this.handleSubmit} updateList={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <input type="text" value={this.state.inputValue} onChange={this.handleChange} placeholder="item" />
-        <input type="submit" value="Submit" />
+        <Button bsStyle="primary" type="submit">add</Button>
       </form>
     )
   }
